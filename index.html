@@ -67,6 +67,12 @@
         font-weight: 700;
       }
 
+      #dynamic p {
+        margin: auto;
+        margin-top: 1rem;
+        max-width: 38rem;
+      }
+
       .share-btn {
         display: inline-block;
         color: #ffffff;
@@ -311,9 +317,13 @@
         // If the count down is over, write some text
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById(
-            "dynamic"
-          ).innerHTML = `Time is up!<br/><img src="https://i.giphy.com/media/XUFPGrX5Zis6Y/giphy.webp" alt="explosion gif"/>`;
+          document.getElementById("dynamic").innerHTML = `Time is up!<br/>
+        
+          <img src="https://i.giphy.com/media/XUFPGrX5Zis6Y/giphy.webp" alt="explosion gif"/><p>Unfortunately, Kominfo is now starting to implement the new licensing rules and may block most of the digital platforms that are not yet registered in their system.</p>
+          
+          <p>These new rules pose a huge privacy risk and have the potential for human rights violations. Help us sign this petition to urge the government through Ministry of Communication and Information Technology (Kominfo) to revise the regulation.</p>
+          
+          <p><a href="/petition" role="button" class="contrast">Sign the petition</a></p>`;
         }
       }, 1000);
     </script>
